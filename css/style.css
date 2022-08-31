@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+.bground{
+    background-color: black;}  
+.fontColor{
+    font-family: Assistant;
+    color: white;}
+@media screen and (max-width: 768px) {
+    .btn{display: flex};
+
+}
+@media screen and (min-width: 769px) {
+    .btn{display: none};
+}
+.imgFondo img{
+    display: flex;
+    width: 100%;
+}	    
+.producto{
+    display: flex;
+    width: 90%;
+}
