@@ -21,7 +21,7 @@
 		<!-- logo -->
 		<div class="row">
 			<div class="col-12 col-lg-12 d-flex justify-content-center">
-				<a href="#"><img src="../assets/img/logo_Not_Vegan.png" alt="imgWhatSapp"></a>
+				<a href="../index.html"><img class="logo" src="../assets/img/logo_Not_Vegan.png" alt="imgWhatSapp"></a>
 			</div>
 		</div>
 		<!-- nav -->
@@ -65,16 +65,23 @@
 			<div class="col-12 col-lg-12 d-flex justify-content-center">
 				<div>
 					<form>
-						<input type="text" name="nombre" placeholder="Nombre">
-						<br><br>
-						<input type="text" name="apellido" placeholder="Apellido">
-						<br><br>
-						<input type="text" name="email" placeholder="E-mail">
-						<br><br><br>
-						<div>Comentarios:</div>
-						<textarea name="" id="" cols="40" rows="10"></textarea><br>
-						<input type="submit" value="Enviar">
-						<input type="reset" value="Resetear">
+						<div class="mb-3">
+							<input class="form-control" placeholder="Nombre">
+						</div>
+						<div class="mb-3">
+							<input class="form-control" placeholder="Apellido">
+						</div>
+						<div class="mb-3">
+							<input class="form-control" placeholder="email@ejemplo.com">
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Comentarios:</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" cols="40" rows="3"></textarea>
+						</div>
+						<div class="mb-5 pb-5">
+							<button type="submit" class="btn-primary">Enviar</button>
+							<button type="reset" class="btn-primary">Resetear</button>
+						</div>
 					</form>
 				</div>
 			</div>

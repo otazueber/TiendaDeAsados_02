@@ -10,7 +10,6 @@ a{
     color: white;}
 @media screen and (max-width: 768px) {
     .btn{display: flex};
-
 }
 @media screen and (min-width: 769px) {
     .btn{display: none};
@@ -22,4 +21,41 @@ a{
 .producto{
     display: flex;
     width: 90%;
+}
+
+/* TRANSICIONES Y ANIMACIONES (SOLO PARA DESKTOP)*/
+@media screen and (min-width: 769px) {
+	.producto{
+		width: 50%;
+		padding: 10%;
+		transition: width 0s;
+	}
+	.producto:hover{
+		width: 60%;
+		padding: 0%;
+		transition: width 1s;	
+	}
+	.logo{
+		transition: all 1s;
+	}
+	.logo:hover{
+		transform: rotate(360deg);
+		transition: rotate(360deg) 1s;
+	}
+	.edt{
+		height: 20px;}
+	.edt:focus{
+		height: 30px;}
+
+	@keyframes resaltar {
+		0%{font-size: 15px;}
+		/* 50%{font-size: 25px;} */
+		100%{font-size: 32px;}
+		
+	}
+	.slogan{
+		animation-name: resaltar;
+		animation-iteration-count: initial;
+		animation-duration: 4s;
+	}
 }
